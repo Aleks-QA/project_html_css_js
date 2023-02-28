@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<mata name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link href="CSS.css"   rel="stylesheet"   type="text/css"/>
+		<title>Изучение HTML</title>
+		<script src="JS.js"></script>
+	</head>
+	<body>
+		</script>
+		<tt id="doc"><strong>html</strong></tt>
+		<!-- Структура HTML -->
+		<div class="body1">
+			<tt><strong>Базовая cтруктура html страницы</strong></tt>
+			<ul>
+				<strong>&lthtml&gt</strong> Внутри него располагается вся информация. Благодаря этому тегу браузер понимает, где начинается контент, который необходимо обработать как HTML.
+				<ul>
+					<li><strong>&lthead&gt</strong>  Метаинформация, не показывается на странице
+					Тег [head] означает заголовок html документа.
+					В тегах head хранится информация для браузеров и поисковых систем.
+					</li>
+					<ul>
+						<li>
+							<strong> &lttitle&gt</strong> Название вкладки <strong> &lt/title&gt</strong>
+						</li>
+						<li>
+							<strong>&ltmeta</strong>  Метаданные, ссылки на файлы CSS, ссылки на иконки, данные о авторе и важные ключевые слова, описывающие документ. &gt 
+						</li>
+
+					</ul>
+					<strong>&lt/head&gt</strong> 
+					<li>
+						<strong>&ltbody&gt</strong>  Тег [body] означает основное содержание html документа.
+						Именно текст, изображения, скрипты Java Script и т.д.;
+					</li>
+					<ul>
+						<li>
+							<strong>&ltheader&gt</strong>  Шапка сайта. Может повторяться на других страницах. <strong>&ltheader&gt </strong> 
+						</li>
+						<li>
+							<strong>&ltmain&gt</strong>  Основной контент. Остается только на этой странице. <strong>&ltmain&gt </strong> 
+						</li>
+						<li>
+							<strong>&ltfooter&gt</strong>  Подвал сайта. Может повторяться на других страницах. <strong>&ltfooter&gt</strong> 
+						</li>
+					</ul>
+					<strong>&lt/body&gt</strong> 
+				</ul>
+				<strong>&lt/html&gt</strong>
+			</ul>
+		</div>
+		<!-- Основные теги -->
+		<div  class="body2">
+			<tt><strong>Базовые теги html страницы</strong></tt>
+			<ul>
+				<li>
+					<strong>&ltp&gt</strong> Тег [p] параграф это блочный элемент, всегда начинается с новой строки.
+					Он означает абзац основного содержания html документа.<strong>&ltp&gt</strong>
+				</li>
+				<li>
+					<strong>&lth1&gt</strong> h1, h2, h3, h4, h5, h6 – теги заголовков <strong>&lth1&gt</strong>
+				</li>
+				<li>
+					<strong>&ltbr&gt</strong> одиночный тег, для перехода на другую строку 
+				</li>
+				<li>
+					<strong>&lta&gt</strong> <strong>  <a href="https://www.youtube.com/" target="_blank">Ссылка выглядит так</a></strong> <strong>&lt/a&gt</strong>
+				</li>
+				<li>
+					<strong>&ltstrong&gt</strong> <strong> Выделить жирным </strong> <strong>&ltstrong&gt</strong>
+				</li>
+				<li>
+					<strong>&ltem&gt</strong> <em> Курсивный текст </em> <strong>&ltem&gt</strong>
+				</li>
+				<li>
+					<strong>&ltinput</strong> placeholder="поле поиска"<strong>&gt</strong>
+						<input placeholder="поле поиска">
+				</li>
+				<li>
+					<strong>&lttable&gt</strong> &lttr&gt &lttd&gt &lt/td&gt  &lttd&gt &lt/td&gt &lt/tr&gt <strong>&lt/table&gt</strong> Таблица<br>
+					<strong>&ltth&gt &lt/th&gt</strong> для выделения
+					<table border="2">
+						<tr>
+							<th>Фамилия &nbsp</th>
+							<th>Имя &nbsp</th>
+							<th>Отчество &nbsp</th>
+						</tr>
+						<tr>
+							<td>Александров</td>
+							<td>Александр</td>
+							<td>Александрович</td>
+						</tr>
+					</table>
+				</li>
+				<li>
+					<strong>&ltol&gt</strong> Упорядоченый список<br>
+					&nbsp &nbsp &nbsp &nbsp <strong>&ltli&gt</strong> элемент списка <strong>&ltli&gt</strong><br>
+					<strong>&lt/ol&gt</strong>
+				</li>
+				<li>
+					<strong>&ltul&gt</strong> Неупорядоченый список<br>
+					&nbsp &nbsp &nbsp &nbsp <strong>&ltli&gt</strong> элемент списка <strong>&ltli&gt</strong><br>
+					<strong>&lt/ul&gt</strong>
+				</li>
+				<li>
+					<strong>&ltdiv&gt</strong><br>
+					&nbsp &nbsp &nbsp &nbsp Элемент div: раздел, секция, является универсальным блочным элементом и
+	предназначен для группирования элементов документа<br>
+					<strong>&lt/div&gt</strong>
+				</li>
+				<li><strong>&ltimg scr="https://w7.pngwing.com/... width="100" height="100" &gt</strong> картинка + размеры<br>
+					<img class="image" src="https://pngicon.ru/file/uploads/vinni-pukh-v-png-256x256.png" width="100" >
+				</li>
+			<ul>
+		</div>
+		<!-- Калькулятор -->
+		<div class="body3">
+			<div  class="form1">
+				<tt><strong>Простой калькулятор</strong></tt><br>
+				<ul>
+					<!-- Простой калькулятор<br> -->
+					<input type="number" placeholder="Введи первое число" id="num1" />
+					<div id="operator_btns">
+						<button id="plus" onclick="op='+'">+</button>
+						<button id="minus" onclick="op='-'">-</button>
+						<button id="times" onclick="op='*'">x</button>
+						<button id="divide" onclick="op='/'">:</button>
+					</div>
+					<input type="number" placeholder="Введи второе число" id="num2" /><br>
+					<button onclick="func()">Посчитать</button>
+					<p id="result"></p>
+				</ul>
+			</div>
+		</div>	
+	</body>
+</html>
