@@ -6,31 +6,6 @@ body{
 	padding: 10px;
 }
 
-h1,h2,h3{
-	color: black;
-	margin-top:  1px;
-}
-
-tt{
-	color: black;
-	font-size: 16pt;
-}
-
-a{
-	color: red;
- 	font-size: 15px;
-}
-
-li{
-	list-style-type: none;
-	margin-top:  5px;
-}
-
-#url2{color: lime;}
-#doc{
-	color: #90d2ff;
-}
-
 .body2,.body3{
 	margin:  40px;
 	padding: 20px;
@@ -82,9 +57,49 @@ li{
 	color: black;
 }
 
-.image:hover{transform: scale(1.2);}
+.image:hover{
+	transform: scale(1.2);
+}
+
+h1,h2,h3{
+	color: black;
+	margin-top:  1px;
+}
+
+tt{
+	color: black;
+	font-size: 16pt;
+}
+
+a{
+	color: red;
+ 	font-size: 15px;
+}
+
+li{
+	list-style-type: none;
+}
+
+.body2 li{
+	list-style-type: none;
+	margin:  20px;
+}
+
+#table li{
+	margin:  2px;
+}
+
+#doc{
+	color: #90d2ff;
+}
 
 
+
+
+
+
+
+/*краткая справка*/
 
 /* селектор{
 	свойство1:значение1;

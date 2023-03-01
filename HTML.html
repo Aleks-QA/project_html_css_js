@@ -26,14 +26,12 @@
 							<strong> &lttitle&gt</strong> Название вкладки <strong> &lt/title&gt</strong>
 						</li>
 						<li>
-							<strong>&ltmeta</strong>  Метаданные, ссылки на файлы CSS, ссылки на иконки, данные о авторе и важные ключевые слова, описывающие документ. &gt 
+							<strong>&ltmeta</strong>  Тег хранит метаданные, ссылки на файлы CSS, ссылки на иконки, данные о авторе и важные ключевые слова, описывающие документ. &gt 
 						</li>
-
 					</ul>
 					<strong>&lt/head&gt</strong> 
 					<li>
-						<strong>&ltbody&gt</strong>  Тег [body] означает основное содержание html документа.
-						Именно текст, изображения, скрипты Java Script и т.д.;
+						<strong>&ltbody&gt</strong>  Основное тело HTML документа, где размещается весь контент. Этот элемент обязателен к использованию и используется на странице один раз.
 					</li>
 					<ul>
 						<li>
@@ -54,19 +52,19 @@
 		<!-- Основные теги -->
 		<div  class="body2">
 			<tt><strong>Базовые теги html страницы</strong></tt>
-			<ul>
+			<ul id="teg">
 				<li>
-					<strong>&ltp&gt</strong> Тег [p] параграф это блочный элемент, всегда начинается с новой строки.
+					<strong>&ltp&gt</strong> Тег параграф, это блочный элемент, всегда начинается с новой строки.
 					Он означает абзац основного содержания html документа.<strong>&ltp&gt</strong>
 				</li>
 				<li>
-					<strong>&lth1&gt</strong> h1, h2, h3, h4, h5, h6 – теги заголовков <strong>&lth1&gt</strong>
+					<strong>&lth1&gt</strong> h1, h2, h3, h4, h5, h6 – это шесть заголовков показывающих относительную важность блока после заголовка в зависимости от уровня заголовка <strong>&lth1&gt</strong>
 				</li>
 				<li>
-					<strong>&ltbr&gt</strong> одиночный тег, для перехода на другую строку 
+					 <strong>&ltbr&gt</strong> Тег устанавливает перевод строки в том месте, где этот тег находится.одиночный тег, для перехода на другую строку 
 				</li>
 				<li>
-					<strong>&lta&gt</strong> <strong>  <a href="https://www.youtube.com/" target="_blank">Ссылка выглядит так</a></strong> <strong>&lt/a&gt</strong>
+					<strong>&lta href</strong>="https://www.youtube.com/" target="_blank"&gt <strong>  <a href="https://www.youtube.com/" target="_blank">Ссылка</a></strong> <strong>&lt/a&gt</strong> Обязательный атрибут тега &lta&gt href указывает ссылку на веб-страницу 
 				</li>
 				<li>
 					<strong>&ltstrong&gt</strong> <strong> Выделить жирным </strong> <strong>&ltstrong&gt</strong>
@@ -79,13 +77,29 @@
 						<input placeholder="поле поиска">
 				</li>
 				<li>
-					<strong>&lttable&gt</strong> &lttr&gt &lttd&gt &lt/td&gt  &lttd&gt &lt/td&gt &lt/tr&gt <strong>&lt/table&gt</strong> Таблица<br>
-					<strong>&ltth&gt &lt/th&gt</strong> для выделения
-					<table border="2">
+					<strong>&lttable&gt</strong> Тег служит контейнером для элементов, определяющих содержимое таблицы.
+					<ol id="table">
+						<strong>&lttr&gt</strong>
+						<ol>
+							<li><strong>&ltth&gt</strong> Фамилия <strong>&lt/th&gt</strong></li>
+							<li><strong>&ltth&gt</strong> Имя <strong>&lt/th&gt</strong></li>
+							<li><strong>&ltth&gt</strong> Отчество <strong>&lt/th&gt</strong></li>
+						</ol>
+						<strong>&lt/tr&gt</strong><br>
+						<strong>&lttr&gt</strong>
+						<ol>
+							<li><strong>&lttd&gt</strong> Александров <strong>&lt/td&gt</strong></li>
+							<li><strong>&lttd&gt</strong> Александр <strong>&lt/td&gt</strong></li>
+							<li><strong>&lttd&gt</strong> Александрович <strong>&lt/td&gt</strong></li>
+						</ol>
+						<strong>&lt/tr&gt</strong>
+					</ol>
+					<strong>&lt/table&gt</strong>
+					<table border="1">
 						<tr>
-							<th>Фамилия &nbsp</th>
-							<th>Имя &nbsp</th>
-							<th>Отчество &nbsp</th>
+							<th>Фамилия</th>
+							<th>Имя</th>
+							<th>Отчество</th>
 						</tr>
 						<tr>
 							<td>Александров</td>
@@ -95,22 +109,53 @@
 					</table>
 				</li>
 				<li>
-					<strong>&ltol&gt</strong> Упорядоченый список<br>
+					<strong>&ltol&gt</strong> Используется для создания нумерованного списка, который содержит элементы в определенной последовательности.<br>
+					&nbsp &nbsp &nbsp &nbsp <strong>&ltli&gt</strong> элемент списка <strong>&ltli&gt</strong><br>
+				 	&nbsp &nbsp &nbsp &nbsp <strong>&ltli&gt</strong> элемент списка <strong>&ltli&gt</strong><br>
 					&nbsp &nbsp &nbsp &nbsp <strong>&ltli&gt</strong> элемент списка <strong>&ltli&gt</strong><br>
 					<strong>&lt/ol&gt</strong>
 				</li>
 				<li>
-					<strong>&ltul&gt</strong> Неупорядоченый список<br>
+					<strong>&ltul&gt</strong> Используется для неупорядоченного списка - в частности для маркированного списка.<br>
+					&nbsp &nbsp &nbsp &nbsp <strong>&ltli&gt</strong> элемент списка <strong>&ltli&gt</strong><br>
+					&nbsp &nbsp &nbsp &nbsp <strong>&ltli&gt</strong> элемент списка <strong>&ltli&gt</strong><br>
 					&nbsp &nbsp &nbsp &nbsp <strong>&ltli&gt</strong> элемент списка <strong>&ltli&gt</strong><br>
 					<strong>&lt/ul&gt</strong>
 				</li>
 				<li>
 					<strong>&ltdiv&gt</strong><br>
-					&nbsp &nbsp &nbsp &nbsp Элемент div: раздел, секция, является универсальным блочным элементом и
-	предназначен для группирования элементов документа<br>
+					&nbsp &nbsp &nbsp &nbsp  Элемент &ltdiv&gt является блочным элементом и предназначен для выделения фрагмента документа с целью изменения вида содержимого. Как правило, вид блока управляется с помощью стилей. Чтобы не описывать каждый раз стиль внутри тега, можно выделить стиль во внешнюю таблицу стилей, а для тега добавить атрибут class или id с именем селектора.<br>
 					<strong>&lt/div&gt</strong>
 				</li>
-				<li><strong>&ltimg scr="https://w7.pngwing.com/... width="100" height="100" &gt</strong> картинка + размеры<br>
+				<li>
+					<strong>Таблица HTML-мнемоник</strong><br>
+					Мнемоника — это кодовое представление символа в HTML, начинающегося со знака амперсанда "&" и завершающееся точкой с запятой ";"<br>
+					<table border="1">
+						<tr>
+							<td>&nbsp<</td>
+							<td>&nbsp></td>
+							<td>&nbsp"</td>
+							<td>&nbsp&rarr;</td>
+							<td>Пробел</td>
+							<td>&nbsp&</td>
+							<td>&nbsp#</td>
+							<td>&nbsp&laquo;</td>
+							<td>&nbsp&raquo;</td>
+						</tr>
+						<tr>
+							<td>&amp;lt</td>
+							<td>&amp;gt</td>
+							<td>&amp;quot</td>
+							<td>&amp;rarr;</td>
+							<td>&amp;nbsp</td>
+							<td>&amp;amp</td>
+							<td>&amp;#35</td>
+							<td>&amp;laquo;</td>
+							<td>&amp;raquo;</td>
+						</tr>
+					</table>
+				</li>
+				<li><strong>&ltimg scr</strong>="https://w7.pngwing.com/... width="100" height="100" &gt Предназначен для отображения на веб-странице изображений в графическом формате
 					<img class="image" src="https://pngicon.ru/file/uploads/vinni-pukh-v-png-256x256.png" width="100" >
 				</li>
 			<ul>
