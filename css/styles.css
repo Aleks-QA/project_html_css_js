@@ -6,6 +6,10 @@ body{
 	padding: 10px;
 }
 
+.text-block {
+margin-left:40px;
+}
+
 .body2,.body3{
 	margin:  40px;
 	padding: 20px;
